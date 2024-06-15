@@ -60,14 +60,14 @@ public class MainMenuBar extends MenuBar {
     @FXML
     private MenuItem find;
 
-    private IMediator mediator = Mediator.getInstance();
-    private FileChooser fileChooser = new FileChooser();
+    private final IMediator mediator = Mediator.getInstance();
+    private final FileChooser fileChooser = new FileChooser();
     private String text;
     private Path filePath;
 
     public MainMenuBar() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(
-                "/menubar.fxml"));
+                "menubar.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
 

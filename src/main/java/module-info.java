@@ -1,4 +1,4 @@
-module lonnwolf031.textedit {
+module lonnwolf.textedit {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,6 +6,6 @@ module lonnwolf031.textedit {
     requires java.xml;
     requires richtextfx;
 
-    opens lonnwolf031.textedit to javafx.fxml;
+    opens lonnwolf031.textedit.gui.components to javafx.graphics, javafx.fxml;
     exports lonnwolf031.textedit;
 }

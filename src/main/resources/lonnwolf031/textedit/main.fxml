@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import lonnwolf031.textedit.gui.components.MainMenuBar?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.components.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lonnwolf031.textedit.gui.components.MainController">
     <children>
-        <MainMenuBar fx:id="mainMenuBar" minHeight="30" minWidth="1000" ></MainMenuBar>
+        <MainMenuBar fx:id="mainMenuBar" minHeight="30" minWidth="1000"/>
         <TabPane fx:id="tabPane" prefHeight="10000" prefWidth="10000">
             <tabs>
 
