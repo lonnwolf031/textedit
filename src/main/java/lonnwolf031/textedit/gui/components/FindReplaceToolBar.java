@@ -61,7 +61,7 @@ public class FindReplaceToolBar extends VBox {
     private ToolBar replaceToolBar;
 
 
-    private Mediator mediator = Mediator.getInstance();
+    private final Mediator mediator = Mediator.getInstance();
 
     private int currentSelectedMatch = 0;
     private int matchedCount;
@@ -69,7 +69,7 @@ public class FindReplaceToolBar extends VBox {
 
     public FindReplaceToolBar() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(
-                "/findAndReplace.fxml"));
+                "findAndReplace.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
         try {

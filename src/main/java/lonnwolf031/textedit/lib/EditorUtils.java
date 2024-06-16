@@ -179,12 +179,12 @@ public class EditorUtils {
      * shows the version information of the app
      * */
     public static void showAboutWindow(MainMenuBar mainMenuBar){
-        FXMLLoader fxmlLoader = new FXMLLoader(mainMenuBar.getClass().getResource("/about.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(mainMenuBar.getClass().getResource("about.fxml"));
         Parent root = null;
         try {
             root = fxmlLoader.load();
             Scene scene = mainMenuBar.getScene();
-            scene.getStylesheets().add(mainMenuBar.getClass().getResource("/style.css").toExternalForm());
+            scene.getStylesheets().add(mainMenuBar.getClass().getResource("style.css").toExternalForm());
             Stage stage = new Stage();
             stage.setResizable(false);
             stage.setTitle("About");

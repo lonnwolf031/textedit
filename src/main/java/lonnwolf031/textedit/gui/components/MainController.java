@@ -30,11 +30,11 @@ public class MainController {
     @FXML
     private FindReplaceToolBar findReplaceToolBar;
 
-    private EditorTextHistory editorTextHistory = new EditorTextHistory();
+    private final EditorTextHistory editorTextHistory = new EditorTextHistory();
 
-    private IMediator mediator = Mediator.getInstance();
+    private final IMediator mediator = Mediator.getInstance();
 
-    private ArrayList<TabSpace> tabSpaces = new ArrayList<>();
+    private final ArrayList<TabSpace> tabSpaces = new ArrayList<>();
     private int textSpacesCount = 0;
 
     @FXML
@@ -47,7 +47,7 @@ public class MainController {
 
     private void tabPaneListener() {
         tabPane.getSelectionModel().selectedIndexProperty().addListener((ov, oldValue, newValue) -> {
-            if (tabPane.getTabs().size() == 0) {
+            if (tabPane.getTabs().isEmpty()) {
                 return;
             }
             System.out.println("sending TAB_CHANGED, #of tabs" + tabPane.getTabs().size());
