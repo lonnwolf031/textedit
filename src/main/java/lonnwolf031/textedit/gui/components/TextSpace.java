@@ -35,7 +35,7 @@ public class TextSpace extends HBox {
      */
     public TextSpace() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(
-                "/textspace.fxml"));
+                "textspace.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
 
